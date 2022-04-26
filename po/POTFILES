@@ -1,0 +1,7 @@
+data/com.github.molnarandris.gtk4_css_shadow.desktop.in
+data/com.github.molnarandris.gtk4_css_shadow.appdata.xml.in
+data/com.github.molnarandris.gtk4_css_shadow.gschema.xml
+src/window.ui
+src/main.py
+src/window.py
+
