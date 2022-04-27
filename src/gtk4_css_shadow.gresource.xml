@@ -4,4 +4,9 @@
     <file>window.ui</file>
     <file>gtk/help-overlay.ui</file>
   </gresource>
+  <gresource prefix="/css_shadows">
+    <file alias="gtk.css">css_shadows.css</file>
+    <file>cssview.css</file>
+    <file>reset.css</file>
+  </gresource>
 </gresources>

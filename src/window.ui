@@ -4,6 +4,7 @@
   <template class="Gtk4CssShadowWindow" parent="GtkApplicationWindow">
     <property name="default-width">600</property>
     <property name="default-height">300</property>
+    <property name="title">Shadows</property>
     <child type="titlebar">
       <object class="GtkHeaderBar" id="header_bar">
         <child type="end">
@@ -15,12 +16,37 @@
       </object>
     </child>
     <child>
-      <object class="GtkLabel" id="label">
-        <property name="label">Hello, World!</property>
-        <attributes>
-          <attribute name="weight" value="bold"/>
-          <attribute name="scale" value="2"/>
-        </attributes>
+      <object class="GtkPaned" id="paned">
+        <property name="orientation">GTK_ORIENTATION_VERTICAL</property>
+        <property name="resize-start-child">FALSE</property>
+        <child>
+          <object class="GtkBox" id="toolbar">
+            <property name="valign">GTK_ALIGN_CENTER</property>
+            <child>
+              <object class="GtkButton">
+                <property name="icon-name">go-next</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="icon-name">go-previous</property>
+              </object>
+            </child>
+            <child>
+              <object class="GtkButton">
+                <property name="label">Hello World</property>
+              </object>
+            </child>
+          </object>
+        </child>
+        <child>
+          <object class="GtkScrolledWindow">
+            <child>
+              <object class="GtkTextView" id="textview">
+              </object>
+            </child>
+          </object>
+        </child>
       </object>
     </child>
   </template>
